@@ -7,15 +7,13 @@ public class Fecha {
     private int mes;
     private int anio;
 
-    // Constructor nulo
-    public Fecha() {}
-
     // Constructor parametrizado
     public Fecha(int dia, int mes, int anio) {
         this.dia = dia;
         this.mes = mes;
         this.anio = anio;
     }
+
 
     // Constructor parametrizado
     public Fecha(String s) {
@@ -26,6 +24,8 @@ public class Fecha {
         anio = Integer.parseInt(s.substring(p2 + 1));
     }
 
+    // Constructor nulo
+    public Fecha() {}
 
     public int getDia() { return dia; }
     public void setDia(int d) { dia = d; }
