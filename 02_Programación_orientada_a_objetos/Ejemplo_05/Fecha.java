@@ -1,4 +1,4 @@
-import java.sql.Date;
+package javaafondo.util;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -7,22 +7,32 @@ public class Fecha {
     private int mes;
     private int anio;
 
+    // Constructor nulo
+    public Fecha() {}
+
+    // Constructor parametrizado
     public Fecha(int dia, int mes, int anio) {
         this.dia = dia;
         this.mes = mes;
         this.anio = anio;
     }
 
-    // Para el ejemplo de Métodos obsoletos voy a usar addDays
-    public void addDays(int n) {
-        @SuppressWarnings("deprecation")
-        Date d = new Date(2025, 9, 7) ;
-        /*
-         * Lo métodos obsoletos se llaman deprecated. Para omitir esta advertencia utilizaremos la annotation @SuppressWarnings ("deprecation").
-         * Lo correcto sería reemplazar los métodos deprecated por otros métodos sustitutos y más actuales
-         * */
-        System.out.println(d);
+    // Constructor parametrizado
+    public Fecha(String s) {
+        int p1 = s.indexOf("/");
+        int p2 = s.lastIndexOf("/");
+        dia = Integer.parseInt(s.substring(0, p1));
+        mes = Integer.parseInt(s.substring(p1 + 1, p2));
+        anio = Integer.parseInt(s.substring(p2 + 1));
     }
+
+
+    public int getDia() { return dia; }
+    public void setDia(int d) { dia = d; }
+    public int getMes() { return mes; }
+    public void setMes(int m) { mes = m; }
+    public int getAnio() { return anio; }
+    public void setAnio(int a) { anio = a; }
 
     public void addDias(int n) {
         // Instanciamos un calendar a partir de los atributos
@@ -43,12 +53,5 @@ public class Fecha {
     @Override
     public String toString() {
         return dia + "/" + mes + "/" + anio;
-    }
-
-    public static void main(String[] args) {
-        Fecha fecha = new Fecha(7, 9, 2025);
-        // fecha.addDias(365);
-        // System.out.println(fecha);
-        fecha.addDays(0);
     }
 }
