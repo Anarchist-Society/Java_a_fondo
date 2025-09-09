@@ -2,6 +2,7 @@ package masclases;
 import javaafondo.util.Fecha;
 
 public class FechaDetallada extends Fecha  {
+    // Esto sería una variable de clase, porque su contenido será el mismo para todas las fechas
     private static String[] meses = {"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
 
     public FechaDetallada(int dia, int mes, int anio) {
