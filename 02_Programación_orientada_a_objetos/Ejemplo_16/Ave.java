@@ -1,0 +1,3 @@
+public class Ave {
+    // Atributos y métodos...
+}

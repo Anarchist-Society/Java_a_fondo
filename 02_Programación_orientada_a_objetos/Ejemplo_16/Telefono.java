@@ -1,0 +1,3 @@
+public class Telefono {
+    // Atributos y métodos...
+}

@@ -1,0 +1,3 @@
+public class Antiguedad {
+    // Atributos y métodos...
+}
