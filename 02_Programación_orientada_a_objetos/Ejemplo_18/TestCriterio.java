@@ -6,11 +6,11 @@ public class TestCriterio {
 
         Util.imprimir(alumnos);
         System.out.println();
-        Util.ordenar(alumnos, new CriterioAlumNombre());
+        Util.ordenar(alumnos, new CriterioAlumNombre()); // Esto se puede reemplazar por una expresión lambda
         Util.imprimir(alumnos);
 
         System.out.println();
-        Util.ordenar(alumnos, new CriterioAlumNotaProm());
+        Util.ordenar(alumnos, new CriterioAlumNotaProm()); // Esto se puede reemplazar por una expresión lambda
         Util.imprimir(alumnos);
     }
 }
