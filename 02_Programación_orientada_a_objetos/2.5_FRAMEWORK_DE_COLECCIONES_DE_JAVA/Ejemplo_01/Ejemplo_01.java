@@ -20,6 +20,7 @@ public class Ejemplo_01 {
 
         // También podemos hacer esto para no tener en cuenta la implementacion concreta de List, para ello he creado otra clase llamada NombresUtil y un método llamado obtenerLista()
         List<String> list = NombresUtil.obtenerLista();
+        // Este for es especial, se denomina for-each, es una variación del ciclo iterativo for
         for (String nom : list) {
             System.out.println(nom);
         }
