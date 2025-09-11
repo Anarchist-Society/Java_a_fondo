@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class Ejemplo_03 {
+public class Ejemplo_01 {
     public static void main(String[] args) {
         // 2.5.5.1. Convertir arrays en List y viceversa
         // En este ejemplo convertimos un array primitivo en una instancia de List

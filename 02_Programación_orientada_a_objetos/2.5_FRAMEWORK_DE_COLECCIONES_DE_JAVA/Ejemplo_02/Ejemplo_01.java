@@ -2,7 +2,7 @@
 
 import java.util.HashMap;
 
-public class Ejemplo_02 {
+public class Ejemplo_01 {
     public static void main(String[] args) {
         HashMap<String, Integer> hashMap = new HashMap<>();
         hashMap.put("uno", 1);
