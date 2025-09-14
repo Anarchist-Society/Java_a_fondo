@@ -25,4 +25,7 @@ public class Ejemplo_01 {
             System.out.println(arr[i]);
         }
     }
+
+    // 2.6.4. STACK TRACE
+    // El stack trace sirve para depurar errores, describe la pila de llamadas en el momento en el que ocurre una excepción, provee información sobre el error y dónde ocurrió
 }
