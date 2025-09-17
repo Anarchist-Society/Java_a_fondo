@@ -1,3 +1,6 @@
+// 9.3.2. UN CLIENTE/SERVIDOR SENCILLO EN JAVA
+// 9.3.2.2. El cliente
+
 // Para que el cliente se pueda conectar con el servidor, tiene que conocer su IP y su PUERTO. En este ejemplo suponemos que el cliente y server se ejecutan sobre la misma
 // máquina, por lo tanto utilizamos la dirección de localhost
 
