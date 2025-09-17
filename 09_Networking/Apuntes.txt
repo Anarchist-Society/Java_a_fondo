@@ -22,3 +22,10 @@ Número de 32 bits que identifica un equipo dentro de la red.
 
 9.2.5. APLICACIONES CLIENTE/SERVIDOR
 Cuando hablamos de cliente/servidor lo hacemos de dos programas diferentes, el programa cliente y el programa servidor.
+
+9.3. TCP
+En nuesta aplicación cliente/servidor vamos a usar TCP porque garantiza la seguridad de los datos.
+El cliente y el servidor deben enviar y recibir datos a través de un socket que debe permancer abierto.
+
+9.3.1. SOCKET
+Es una especie de tubo que canaliza la información que intercambian dos procesos ubicados en diferentes puntos de la red, direccionados por una dirección IP y un puerto.
