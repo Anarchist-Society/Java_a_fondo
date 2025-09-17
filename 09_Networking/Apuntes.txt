@@ -13,3 +13,12 @@ la integridad de los datos. Similar a una llamada telefónica.
 9.2.2. USER DATAGRAM PROTOCOL
 No son seguras ni están garantizadas, ya que no es un protocolo orientado a conexión. UDP envía datos independientes, llamados datagramas. Al no ser orientado a conexión resulta
 más rápido que TCP porque reduce el overhead. Similar al envío por cartas.
+
+9.2.3. PUERTOS
+Los puertos son una dirección interna que direcciona una aplicación(proceso) dentro de la computadora, a través los datos pueden ser reenviados a las aplicaciones que correspondan.
+
+9.2.4. DIRECCIÓN IP
+Número de 32 bits que identifica un equipo dentro de la red.
+
+9.2.5. APLICACIONES CLIENTE/SERVIDOR
+Cuando hablamos de cliente/servidor lo hacemos de dos programas diferentes, el programa cliente y el programa servidor.
