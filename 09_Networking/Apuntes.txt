@@ -1,0 +1,15 @@
+9.1. INTRODUCCIÓN
+Java provee clases que hace posible que dos programas que se ejecutan en ordenadores diferentes se comuniquen entre sí.
+Las clases están ubicadas en el paquete java.net que conforma la API de networking
+
+9.2. CONCEPTOS BÁSICOS DE NETWORKING
+Los ordenadores que se comunican entre sí utilizan un protocolo de comunicación: TCP, UDP, ambos implementan una capa de abstracción denominada capa de transporte.
+Pero cuando escribimos programas que se conectan con otros ordenadores trabajamos sobre la capa de abstracción de alto nivel llamada capa de aplicación.
+
+9.2.1. TRANSMISSION CONTROL PROTOCOL
+Protocolo que permite conectar dos ordenadores de manera confiable. Al establecer la comunicación se crea un canal a través cada parte puede enviar y recibir datos, garantizando
+la integridad de los datos. Similar a una llamada telefónica.
+
+9.2.2. USER DATAGRAM PROTOCOL
+No son seguras ni están garantizadas, ya que no es un protocolo orientado a conexión. UDP envía datos independientes, llamados datagramas. Al no ser orientado a conexión resulta
+más rápido que TCP porque reduce el overhead. Similar al envío por cartas.
