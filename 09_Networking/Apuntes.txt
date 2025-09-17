@@ -1,6 +1,5 @@
 9.1. INTRODUCCIÓN
-Java provee clases que hace posible que dos programas que se ejecutan en ordenadores diferentes se comuniquen entre sí.
-Las clases están ubicadas en el paquete java.net que conforma la API de networking
+Java provee clases que hace posible que dos programas que se ejecutan en ordenadores diferentes se comuniquen entre sí.  Las clases están ubicadas en el paquete java.net que conforma la API de networking
 
 9.2. CONCEPTOS BÁSICOS DE NETWORKING
 Los ordenadores que se comunican entre sí utilizan un protocolo de comunicación: TCP, UDP, ambos implementan una capa de abstracción denominada capa de transporte.
@@ -29,3 +28,7 @@ El cliente y el servidor deben enviar y recibir datos a través de un socket que
 
 9.3.1. SOCKET
 Es una especie de tubo que canaliza la información que intercambian dos procesos ubicados en diferentes puntos de la red, direccionados por una dirección IP y un puerto.
+
+9.4. UDP
+UDP es diferente que TCP, al no ser un protocolo orientado a la conexión, reduce el overhead de la comunicación por lo que resulta más rápido que TCP.
+En una comunicacion UDP, cada mensaje se encapsula dentro de una instancia de DatagramPacket y es enviado por la red a través de un DatagramSocket.
