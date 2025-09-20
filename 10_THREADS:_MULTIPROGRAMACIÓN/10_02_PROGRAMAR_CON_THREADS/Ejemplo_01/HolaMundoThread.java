@@ -1,3 +1,4 @@
+// 10.2. PROGRAMAR CON THREADS
 // Un thread es una instancia de alguna clase que extiende a Thread y sobreescribe el método run. Este método es secuencial
 // Es allí donde debemos programar la tarea que el proceso concurrente llevará a cabo:
 // El siguiente ejemplo, extiende a Thread y sobreescribe el método run para hacer lo siguiente:
