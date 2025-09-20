@@ -1,9 +1,10 @@
-// 10.2.3. CICLO DE VIDE DE UN THREAD
 
-public class MiThread extends Thread {
+// 10.2.4. PRIORIDAD DE EJECUCIÓN
+
+public class MiThreadPrioridad extends Thread {
     private String nombre;
 
-    public MiThread(String nombre) {
+    public MiThreadPrioridad(String nombre) {
         this.nombre = nombre;
     }
 
@@ -21,6 +22,10 @@ public class MiThread extends Thread {
     public static void main(String[] args) {
         MiThread t1 = new MiThread("Pablo");
         MiThread t2 = new MiThread("Pedro");
+
+        // Ajustamos prioridades
+        t1.setPriority(Thread.MIN_PRIORITY); // 1 (menor prioridad)
+        t2.setPriority(Thread.MAX_PRIORITY); // 10 (mayor prioridad)
 
         t1.start();
         t2.start();
