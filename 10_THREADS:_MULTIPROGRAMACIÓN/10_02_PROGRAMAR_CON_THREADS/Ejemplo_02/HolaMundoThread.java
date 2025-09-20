@@ -1,3 +1,4 @@
+// 10.2.1. LA INTERFACE Runnable
 // En realidad Thread implementa la interface Runnable. De esta hereda el método run
 // En este ejemplo en vez de extender de Thread implementamos la interface Runnable
 
@@ -11,8 +12,8 @@ public class HolaMundoThread implements Runnable {
     public void run() {
         try {
             int x = (int)(Math.random() * 5000);
-            System.out.println();
             Thread.sleep(x);
+            System.out.println("Soy: " + nombre + " (" + x + ")");
         } catch (Exception e) {
             e.printStackTrace();
         }
