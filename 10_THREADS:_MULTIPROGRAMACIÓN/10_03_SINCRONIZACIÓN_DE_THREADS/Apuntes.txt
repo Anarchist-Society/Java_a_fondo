@@ -1,0 +1,18 @@
+10.3. SINCRONIZACIÓN DE PROCESOS
+Dos o más hilos podrían intentar acceder al mismo recurso, como un comerciante y sus empleados intentando utilizar una balanza.
+Esto sería similar si varios hilos intentase acceder a un mismo fichero para escribir información, o acceder a un misma conexión de base de datos para ejecutar un update.
+Mientras uno podría estar ejecutando sentencias otro podría ejecutar un commit, y de este modo dejar en firme las sentencias que ejecutó primero.
+
+10.3.1. MONITORES Y SECCIÓN CRÍTICA
+El acceso a los recursos compartidos (o recursos críticos) deben ser monitoreado. El fragmento de código que los manipula se llama sección crítica y debe ser mutuamente excluyente.
+Es decir que si un hilo está ejecutando su sección crítica, debemos tener la plena seguridad de que ningún otro hilo, en ese momento lo esté ejecutando.
+
+Java provee el modificador synchronized, que, aplicado a la declaración de un método, garantiza que ese método se ejecutará a lo sumo por un único thread a la vez.
+
+Decimo que una clase que tiene al menos un método synchronized es un monitor, ya que dentro de este se está monitoreando el acceso a algún recurso crítico.
+Si un thread está ejecutando el método y otro thread pretende invocarlo, este último deberá ir a una cola de espera del monitor. Porque Java garantiza que un método sincronizado solo podrá ser ejecutado por un único hilo a la vez.
+
+La sincronización tiene lugar por cada instancia del monitor. Si de un mismo monitor existiesen dos o más instancias, mientras un hilo se encuentre ejecutando un método (sincronizado) sobre uan de estas instancias, otro hilo podría
+ejercutar el mismo método (sincronizado) sobre otra de las instancias del monitor. Es como un comercio tuviera dos balanzas, un empleado podría utilizar una y al mismo tiempo otro empleado podría utilizar otra.
+Si un tercer empleado necesitase una balanza, formaría una cola, a la espera de que alguna se libere.
+
