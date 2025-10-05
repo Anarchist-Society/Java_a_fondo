@@ -1,0 +1,3 @@
+3.1. INTRODUCCIÓN
+Cuando hablamos de programación funcional nos referimos a programar el proceso de transformación de una función dentro del código de un método, utilizando una expresión lambda, y que esa expresión pueda ser pasada como un
+argumento de otro método, el cual la podrá invocar como si se tratase de una función.
