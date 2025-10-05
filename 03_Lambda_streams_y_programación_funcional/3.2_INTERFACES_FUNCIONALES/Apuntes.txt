@@ -1,0 +1,6 @@
+3.2.1. PROTOTIPO DE UN METODO O FUNCIÓN
+El prototipo de una función, al igual que el de un método, es el conjunto compuesto por su nombre, los tipos de dato de los parámetros que espera recibir y el tipo de dato de su valor de retorno.
+También pordíamos agregar sus modificadores, como ser public static, final...
+
+Por ejemplo el prototipo del método log de la clase Math, que retorna el logaritmo neperiano del valor que recibe como parámetro:
+double log(double); // prototipo de log
